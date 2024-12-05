@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Booking Confirmation - Hotel Nest</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <header>
+    <h1>Confirm Your Booking</h1>
+  </header>
+
+  <section id="booking-summary">
+    <h2>Booking Summary</h2>
+    <p>Hotel: <span id="hotelName"></span></p>
+    <p>Room Type: <span id="roomType"></span></p>
+    <p>Price per Night: $<span id="price"></span></p>
+  </section>
+
+  <section id="booking-form">
+    <h2>Guest Details</h2>
+    <form id="confirmBookingForm" onsubmit="confirmBooking(event)">
+      <label for="guestName">Guest Name:</label>
+      <input type="text" id="guestName" name="guestName" required>
+
+      <label for="phoneNumber">Phone Number:</label>
+      <input type="tel" id="phoneNumber" name="phoneNumber" required pattern="[0-9]{10}">
+
+      <label for="checkIn">Check-in Date:</label>
+      <input type="date" id="checkIn" name="checkIn" required>
+
+      <label for="checkOut">Check-out Date:</label>
+      <input type="date" id="checkOut" name="checkOut" required>
+
+      <button type="submit">Confirm Booking</button>
+    </form>
+  </section>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

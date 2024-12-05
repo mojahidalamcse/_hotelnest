@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Select a Room - Hotel Nest</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <header>
+    <h1>Select a Room at <span id="hotel-name"></span></h1>
+  </header>
+
+  <section id="room-list">
+    <div class="room-item">
+      <h3>Single Room</h3>
+      <p>$100 per night</p>
+      <button onclick="bookRoom('Single Room', 100)">Book Now</button>
+    </div>
+    <div class="room-item">
+      <h3>Double Room</h3>
+      <p>$150 per night</p>
+      <button onclick="bookRoom('Double Room', 150)">Book Now</button>
+    </div>
+  </section>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
